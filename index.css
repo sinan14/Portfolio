@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(148, 9, 9);
+    color: white;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#welcome-section {
+    /* user story 10 yes  height welcome section is equal to view port */
+    text-align: center;
+    font-family: cursive;
+    margin: 128px 0 64px;
+}
+.description {
+    padding: 1rem 64px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.imgborder {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+welcome-section h1 {
+    text-align: center;
+    background-color: rgb(13, 42, 66);
+}
+
+welcome-section p {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact-ancr {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width:600px) {
+    #welcome-section {
+        margin-top: 200px;
+        text-align: center;
+    }
+}
