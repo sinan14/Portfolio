@@ -1,61 +1,67 @@
 body {
-    background-color: rgb(148, 9, 9);
-    color: white;
-    text-align: center;
+  background-color: rgb(148, 9, 9);
+  color: white;
+  text-align: center;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+#navbar .navbar-nav .nav-link:hover {
+    color: #fff !important;
 }
 
 #welcome-section {
-    /* user story 10 yes  height welcome section is equal to view port */
-    text-align: center;
-    font-family: cursive;
-    margin: 128px 0 64px;
+  /* user story 10 yes  height welcome section is equal to view port */
+  text-align: center;
+  font-family: cursive;
+  margin: 128px 0 64px;
 }
 .description {
-    padding: 1rem 64px 0;
+  padding: 1rem 64px 0;
 }
 
 #projects h2 {
-    text-align: center;
-    margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .imgborder {
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .img-fluid {
-    height: 360px !important;
+  height: 360px !important;
 }
 
 welcome-section h1 {
-    text-align: center;
-    background-color: rgb(13, 42, 66);
+  text-align: center;
+  background-color: rgb(13, 42, 66);
 }
 
 welcome-section p {
-    text-align: center;
+  text-align: center;
 }
 
 #contact {
-    text-align: center;
-    padding: 48px 0 48px;
+  text-align: center;
+  padding: 48px 0 48px;
 }
 
 #contact-ancr {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-@media(max-width:600px) {
-    #welcome-section {
-        margin-top: 200px;
-        text-align: center;
-    }
+@media (max-width: 600px) {
+  #welcome-section {
+    margin-top: 200px;
+    text-align: center;
+  }
 }
