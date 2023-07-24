@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image" href="./assets/favicon.jpg" />
-    <title>Sinan Mohammed</title>
+    <title>Sinan's portfolio</title>
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -15,21 +15,21 @@
       src="https://kit.fontawesome.com/5d0e1e5952.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
 
-  <body style="background-color: rgb(148, 9, 9)">
-    <!--  nav bar starts -->
-    <!-- user story 6  yes there is a navbar with id ="navbar" -->
-    <!-- user story 11 yes nav bar is always at the top of view port -->
+  <body>
     <nav
       class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-end fixed-top"
       id="navbar"
     >
       <ul class="navbar-nav">
         <li class="nav-item">
-          <!-- user story 7 --yes there are many links to navigate to diffrent sections of page -->
           <a class="nav-link" href="#welcome-section">My Self</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
@@ -41,9 +41,7 @@
     </nav>
     <!--  nav ends -->
     <div class="container-fluid">
-      <!--   user story 1= yes there is a element with id="welcome-section" -->
-      <section id="welcome-section">
-        <!-- user story 2= yes there is a h1 element in welcome section -->
+      <section id="welcome-section" class="text-center">
         <h1>Hello , I am Sinan</h1>
         <p>I'm a Full Stack Developer</p>
         <p class="description">
@@ -64,10 +62,138 @@
         </p>
       </section>
       <!--     welcome section ends -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="text-center mb-5">Skills</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>HTML and CSS
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Angular
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>React
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Tailwind CSS
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Responsive web design
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Sass/SCSS
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Bootstrap
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Node.js
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Express.js
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>MongoDB
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>JavaScript
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Git and GitHub
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>RESTful APIs
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="fas fa-angle-right me-2"></i>Typescript
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- users story 3= yes there is a section with id= "projects" -->
       <section id="projects">
-        <h2>Here are some of my projects</h2>
+        <h2 class="mb-5 text-center">Here are some of my projects</h2>
         <div class="row">
+          <div class="project-title col-sm-4">
+            <a
+              target="_blank"
+              href="https://sinan14.github.io/fm-interactive-comment-section/"
+            >
+              <img
+                class="img-fluid imgborder"
+                src="./assets/desktop-modal.jpg"
+              />
+            </a>
+            <p class="fcc1">
+              <a
+                target="_blank"
+                href="https://github.com/sinan14/fm-interactive-comment-section"
+              >
+                React comment section
+              </a>
+            </p>
+          </div>
+          <div class="project-title col-sm-4">
+            <a
+              target="_blank"
+              href="https://sinan14.github.io/todo-app-angular/"
+            >
+              <img class="img-fluid imgborder" src="./assets/todo-app.jpg" />
+            </a>
+            <p class="fcc1">
+              <a
+                target="_blank"
+                href="https://github.com/sinan14/todo-app-angular"
+              >
+                Angular Todo app
+              </a>
+            </p>
+          </div>
+          <div class="project-title col-sm-4">
+            <a target="_blank" href="https://sinan14.github.io/ecommerce-page/">
+              <img
+                class="img-fluid imgborder"
+                src="./assets/ecom-product.jpg"
+              />
+            </a>
+            <p class="fcc1">
+              <a
+                target="_blank"
+                href="https://github.com/sinan14/ecommerce-page"
+              >
+                E-commerce Product page
+              </a>
+            </p>
+          </div>
+          <div class="project-title col-sm-4">
+            <a
+              href="http://ec2-18-219-147-180.us-east-2.compute.amazonaws.com/"
+              target="_blank"
+            >
+              <img
+                class="img-fluid imgborder"
+                src="./assets/studentEnrollmentSystem.jpg"
+              />
+            </a>
+            <p class="fcc1">
+              <a
+                target="_blank"
+                href="https://github.com/sinan14/student-enrollment-system"
+              >
+                Student Enrollment System
+              </a>
+            </p>
+          </div>
           <div class="project-title col-sm-4">
             <a
               target="_blank"
@@ -106,25 +232,7 @@
               </a>
             </p>
           </div>
-          <div class="project-title col-sm-4">
-            <a
-              href="http://ec2-18-219-147-180.us-east-2.compute.amazonaws.com/"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/studentEnrollmentSystem.jpg"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/student-enrollment-system"
-              >
-                Student Enrollment System
-              </a>
-            </p>
-          </div>
+
           <div class="project-title col-sm-4">
             <a
               target="_blank"
@@ -144,84 +252,9 @@
               </a>
             </p>
           </div>
+
           <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/Markdown-Previewer/"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/markdown-previewer.png"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/Markdown-Previewer"
-              >
-                React MarkdownPreviewer
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/random-quote-machine/"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/random-quote-machine.png"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/random-quote-machinetodo-app-angular"
-              >
-                React Random Quote Machine
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/todo-app-angular/"
-            >
-              <img class="img-fluid imgborder" src="./assets/todo-app.jpg" />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/todo-app-angular"
-              >
-                Angular Todo app
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/ecommerce-page/"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/ecom-product.jpg"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/ecommerce-page"
-              >
-                E-commerce Product page
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/Multistep-form/"
-            >
+            <a target="_blank" href="https://sinan14.github.io/Multistep-form/">
               <img
                 class="img-fluid imgborder"
                 src="./assets/ang-multi-step.jpg"
@@ -294,237 +327,15 @@
               </a>
             </p>
           </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/intro-page/"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/intro-section.jpg"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/intro-page/"
-              >
-                Intro section with dropdown navigation
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/Testimonial-grid-section"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/testimonial-grid.jpg"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/Testimonial-grid-section"
-              >
-                Testimonials grid section
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/nft-cube/"
-            >
-              <img class="img-fluid imgborder" src="./assets/nft-card.jpg" />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/nft-cube"
-              >
-                NFT preview card component
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/profile-card-component/"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/profile-card.jpg"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/profile-card-component/"
-              >
-                Profile card design
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/qr-code-dar-sass"
-            >
-              <img class="img-fluid imgborder" src="./assets/qr-code.jpg" />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/qr-code-dar-sass"
-              >
-                QR code component
-              </a>
-            </p>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              target="_blank"
-              href="https://sinan14.github.io/product-preview-card/"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/product-preview.jpg"
-              />
-            </a>
-            <p class="fcc1">
-              <a
-                target="_blank"
-                href="https://github.com/sinan14/product-preview-card"
-              >
-                Product preview card component
-              </a>
-            </p>
-          </div>
-
-          <div class="project-title col-sm-4">
-            <a
-              href="https://sinan14.github.io/interactive-rating-components/"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="assets/rating-component.jpg"
-              />
-              <p class="fcc1">
-                <a
-                  target="_blank"
-                  href="https://github.com/sinan14/interactive-rating-components"
-                >
-                  Interactive rating component
-                </a>
-              </p>
-            </a>
-          </div>
-
-          <div class="project-title col-sm-4">
-            <a
-              href="https://sinan14.github.io/Advice-generator/"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/advice-generator.jpg"
-              />
-              <p class="fcc1">
-                <a
-                  target="_blank"
-                  href="https://github.com/sinan14/Advice-generator"
-                >
-                  Advice generator
-                </a>
-              </p>
-            </a>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              href="https://sinan14.github.io/stats-preview-card-front-end"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/static-preview.jpg"
-              />
-              <p class="fcc1">
-                <a
-                  target="_blank"
-                  href="https://github.com/sinan14/stats-preview-card-front-end"
-                >
-                  Stats preview card component
-                </a>
-              </p>
-            </a>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              href="https://sinan14.github.io/stats-preview-card-front-end"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/static-preview.jpg"
-              />
-              <p class="fcc1">
-                <a
-                  target="_blank"
-                  href="https://github.com/sinan14/stats-preview-card-front-end"
-                >
-                  Stats preview card component
-                </a>
-              </p>
-            </a>
-          </div>
-
-          <div class="project-title col-sm-4">
-            <a
-              href="https://sinan14.github.io/Article-preview/"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/article-preview.jpg"
-              />
-              <p class="fcc1">
-                <a
-                  target="_blank"
-                  href="https://github.com/sinan14/Article-preview"
-                >
-                  Article preview component
-                </a>
-              </p>
-            </a>
-          </div>
-          <div class="project-title col-sm-4">
-            <a
-              href="https://sinan14.github.io/faq-component/"
-              target="_blank"
-            >
-              <img
-                class="img-fluid imgborder"
-                src="./assets/faq-accordion.jpg"
-              />
-              <p class="fcc1">
-                <a
-                  target="_blank"
-                  href="https://github.com/sinan14/faq-component"
-                >
-                  FAQ accordion card
-                </a>
-              </p>
-            </a>
-          </div>
         </div>
       </section>
       <section id="contact">
         <div>
-          <h3>Do You Like coffee?</h3>
-          <h5>Lets code together</h5>
+          <h3>Get in Touch!</h3>
+          <p>
+            Hello there! I'm excited to connect with you and discuss our next
+            coding adventure together.
+          </p>
         </div>
         <div id="contact-ancr">
           <a
@@ -536,15 +347,24 @@
             <span style="margin-left: 4px">LinkedIn</span>
           </a>
           <a
+            class="contact-links"
             id="profile-link"
             target="_blank"
             href="https://www.freecodecamp.org/fcc0d2793a3-38ad-4ec7-a62f-5d31cc614e4b"
           >
             <i class="fab fa-free-code-camp"></i>
-            <span style="margin-left: 4px">FreeCodeCamp</span></a
-          >
+            <span style="margin-left: 4px">FreeCodeCamp</span>
+          </a>
+        </div>
+        <div id="contact-details" class="my-4">
+          <h4>Contact Details</h4>
+          <p onclick="copyText('email')" id="email">
+            Email: sinuzar5@gmail.com
+          </p>
+          <p onclick="copyText('phone')" id="phone">Phone: +91 6282906569</p>
         </div>
       </section>
     </div>
+    <div id="toast-message"></div>
   </body>
 </html>
