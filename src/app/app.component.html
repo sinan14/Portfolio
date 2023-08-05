@@ -1,0 +1,139 @@
+<nav
+  class="navbar navbar-expand-sm navbar-dark justify-content-end fixed-top"
+  id="navbar"
+>
+  <ul class="navbar-nav text-uppercase">
+    <li *ngFor="let link of navigationLinks" class="nav-item">
+      <a class="nav-link" [href]="link.href">{{ link.name }}</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <section id="welcome-section" class="text-center">
+    <h1>Hello , I am Sinan</h1>
+    <p>I'm a Full Stack Developer</p>
+    <p class="description">
+      Welcome! I am an accomplished Full Stack Developer with a year of valuable
+      experience. My expertise spans front-end and back-end development,
+      enabling me to tackle diverse challenges. From creating user-friendly
+      interfaces to building robust architectures, I strive for excellence in
+      every project. I write clean, efficient code and embrace best practices.
+      Beyond technical skills, I excel in collaboration and communication. I
+      work seamlessly with cross-functional teams, translating complex concepts
+      to non-technical stakeholders. Always eager to learn, I stay up to date
+      with cutting-edge technologies and seek opportunities to expand my
+      knowledge. If you seek a dedicated Full Stack Developer with a creative
+      approach, precision, and a deep understanding of the development process,
+      let's connect. Together, we can achieve remarkable results.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2 class="mt-4">Work Experience</h2>
+    <div class="container mt-4">
+      <div class="row experience-row">
+        <div class="col-md-2 date-column">
+          <p class="font-weight-bold">APRIL 2022 - PRESENT</p>
+          <p class="font-weight-bold">VERVE MOBILE PRIVATE LIMITED</p>
+        </div>
+        <div class="col-md-10 experience-column">
+          <p><strong>Angular ionic Developer</strong></p>
+          <p>
+            Successfully developed and optimized the iOS application for India's
+            leading dating platform, Quack Quack. Significantly improved
+            application performance, reduced bugs, and minimized crashes.
+            Developed a glossy mobile-specific website using Angular to enhance
+            user experience.
+          </p>
+        </div>
+      </div>
+      <div class="row experience-row mt-4">
+        <div class="col-md-2 date-column">
+          <p class="font-weight-bold">SEPTEMBER 2021 - JANUARY 2022</p>
+          <p class="font-weight-bold">CYBASE TECHNOLOGIES</p>
+        </div>
+        <div class="col-md-10 experience-column">
+          <p><strong>Mean Stack Developer</strong></p>
+          <p>
+            Worked on an medfolio e-commerce application, contributing to the
+            design and development of various features. Collaborated with a team
+            to deliver high-quality solutions and ensure smooth project
+            execution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-center mb-5">Professional Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li
+              *ngFor="let skill of skillsColumn1"
+              class="list-group-item d-flex align-items-center"
+            >
+              <i class="fas fa-angle-right me-2"></i>{{ skill }}
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li
+              *ngFor="let skill of skillsColumn2"
+              class="list-group-item d-flex align-items-center"
+            >
+              <i class="fas fa-angle-right me-2"></i>{{ skill }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="mb-5 text-center">Portfolio</h2>
+    <div class="row">
+      <div *ngFor="let project of projects" class="project-title col-sm-4">
+        <a target="_blank" [href]="project.liveLink">
+          <img
+            class="img-fluid imgborder"
+            [src]="project.imageUrl"
+            alt="{{ project.title }}"
+          />
+        </a>
+        <p class="fcc1">
+          <a target="_blank" [href]="project.sourceLink">{{ project.title }}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div>
+      <h3>Get in Touch!</h3>
+      <p>
+        Hello there! I'm excited to connect with you and discuss our next coding
+        adventure together.
+      </p>
+    </div>
+    <div id="contact-ancr">
+      <a class="contact-links" target="_blank" [href]="linkedIn">
+        <i class="fab fa fa-linkedin"></i>
+        <span style="margin-left: 4px">LinkedIn</span>
+      </a>
+      <a class="contact-links" id="profile-link" target="_blank" [href]="fcc">
+        <i class="fab fa-free-code-camp"></i>
+        <span style="margin-left: 4px">FreeCodeCamp</span>
+      </a>
+    </div>
+    <div id="contact-details" class="my-4">
+      <h4>Contact Details</h4>
+      <p (click)="copyText('email')" id="email">Email: {{ email }}</p>
+      <p (click)="copyText('phone')" id="phone">Phone: {{ phone }}</p>
+    </div>
+  </section>
+</div>
+<div id="toast-message"></div>

@@ -1,29 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
 body {
-  /* background-color: rgb(148, 9, 9); */
   background-color: #2d4059;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-nav {
+#navbar {
   position: fixed;
   top: 0;
   left: 0;
+  font-family: cursive, sans-serif;
+  background-color: #007bff;
+  background-color: #0d2a42;
+  background-color: #28a745;
+  background-color: #20c997;
+  color: #ffffff;
 }
+
 #navbar .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.75) !important;
 }
+
 #navbar .navbar-nav .nav-link:hover {
   color: #fff !important;
 }
 
 #welcome-section {
-  /* user story 10 yes  height welcome section is equal to view port */
   font-family: cursive;
-  margin: 128px 0 2rem;
+  margin: 128px 0 6rem;
 }
+section:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
 .description {
   padding: 1rem 64px 0;
 }
@@ -32,12 +43,15 @@ nav {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
 .img-fluid {
   height: 360px !important;
 }
+
 .fcc1 a:hover {
   color: #fff;
 }
+
 #welcome-section h1 {
   text-align: center;
   background-color: #0d2a42;
@@ -50,6 +64,7 @@ nav {
     text-align: center;
   }
 }
+
 #contact {
   text-align: center;
   padding: 48px 0;
@@ -104,10 +119,12 @@ nav {
 
 /* Hover effect for email and phone */
 #contact-details p:hover {
-  color: #007bff; /* Change this to your desired hover color */
+  color: #007bff;
+  /* Change this to your desired hover color */
   cursor: pointer;
   text-decoration: underline;
 }
+
 /* Toast message styles */
 #toast-message {
   display: none;
@@ -121,15 +138,18 @@ nav {
   border-radius: 5px;
   z-index: 9999;
 }
+
 #skills {
   padding: 4rem 0;
+  background-color: #333333;
+  color: #ffffff;
 }
+
 #skills .list-group {
   font-size: 18px;
   border: none;
-  background-color: #f7f7f7;
   padding: 1rem 0;
-  color: #333;
+  color: #000;
 }
 
 #skills .list-group-item {
@@ -140,6 +160,7 @@ nav {
 #skills .list-group-item i {
   color: #007bff;
 }
+
 #skills .list-group-item:hover i {
   color: #999;
 }
@@ -150,9 +171,28 @@ nav {
   cursor: pointer;
 }
 
-#skills h2 {
-  color: #007bff;
-}
 .d-flex {
   gap: 1rem;
+}
+
+/* ... Your existing styles ... */
+
+.experience-row {
+  margin-bottom: 1.5rem;
+}
+
+.date-column {
+  background-color: #0d2a42;
+  color: white;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.experience-column {
+  background-color: #1f2a38;
+  color: white;
+  padding: 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
