@@ -37,7 +37,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "https://sinan14.github.io/Portfolio/"
+              "baseHref": "https://portfolio.sinanmohammed.website/"
             },
             "development": {
               "buildOptimizer": false,
