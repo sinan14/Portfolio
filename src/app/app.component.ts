@@ -131,5 +131,11 @@ export class AppComponent {
       liveLink: 'https://sinan14.github.io/interactive-card-details-form/',
       sourceLink: 'https://github.com/sinan14/interactive-card-details-form/',
     },
+    {
+      title: 'Profile card',
+      imageUrl: 'assets/profile-card.jpg',
+      liveLink: 'https://sinan14.github.io/profile-card-component/',
+      sourceLink: 'https://github.com/sinan14/profile-card-component/',
+    },
   ];
 }
